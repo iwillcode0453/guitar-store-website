@@ -252,7 +252,7 @@ header {
 /* Mobile Navigation
 
 When the screen becomes small, the menu slides in from the left. */
-@media (max-width: 768px) {
+@media (max-width: 620px) {
 	.menu-btn {
 		display: block;
 	}
@@ -295,7 +295,7 @@ When the screen becomes small, the menu slides in from the left. */
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 620px) {
 	.hero h1 {
 		font-size: 2.5rem;
 	}
