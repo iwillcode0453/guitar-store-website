@@ -3,7 +3,10 @@ const navMenu = document.querySelector(".top-links");
 
 if (menuBtn && navMenu) {
   const toggleMenu = (e) => {
-    if (e) e.stopPropagation();
+    if (e) {
+      e.stopPropagation();
+    }
+
     const isOpen = navMenu.classList.toggle("active");
     menuBtn.classList.toggle("active", isOpen);
     menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");

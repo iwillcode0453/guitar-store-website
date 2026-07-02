@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 header {
 	position: fixed;
 	top: 0;
@@ -225,8 +229,25 @@ header {
 
 	text-decoration: none;
 }
+
+/* Styling for Buttons */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 26px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 700;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+}
+
 /* These are the Button Styles */
-.button-showcase {
+/* .button-showcase {
 	background: #0f1117;
 	padding: 80px 20px;
 	display: flex;
@@ -257,23 +278,10 @@ header {
 	color: white;
 	margin: 0 0 30px;
 	font-size: 2rem;
-}
+} */
 
-.btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 14px 26px;
-	border-radius: 10px;
-	text-decoration: none;
-	font-weight: 700;
-	transition: all 0.3s ease;
-}
-
-.btn:hover {
-	transform: translateY(-3px);
-}
-
+/* Different Kind of Buttons */
+/* 
 .btn-solid {
 	background: #f5b70c;
 	color: #000;
@@ -301,7 +309,7 @@ header {
 	background: transparent;
 	color: white;
 	border: 1px solid rgba(255, 255, 255, 0.25);
-}
+} */
 
 /* Stats Section Styling */
 .hero-stats {
@@ -325,6 +333,65 @@ header {
 .hero-stats span {
 	color: #ddd;
 }
+
+/* ========================= */
+/* Features Section CSS styling */
+.features{
+    padding:100px 10%;
+    background:#111;
+    color:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#bbb;
+    line-height:1.8;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#1b1b1b;
+    padding:40px 25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#bbb;
+    line-height:1.7;
+}
+
 
 /* Mobile Navigation
 
