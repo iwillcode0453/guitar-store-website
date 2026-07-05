@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -139,6 +146,7 @@ header {
 	text-align: center;
 	max-width: 800px;
 	padding: 20px;
+	margin-top: 70px;
 }
 
 /* Hero Badge Styling */
@@ -175,7 +183,7 @@ header {
 .hero-content h1 {
 	color: white;
 	font-size: 36px;
-	margin-bottom: 20px;
+	margin: 30px auto;
 }
 
 /* Hero paragraph */
@@ -240,6 +248,12 @@ header {
 	text-decoration: none;
 	font-weight: 700;
 	transition: all 0.3s ease;
+}
+
+.btn-outline {
+	border: 2px solid #f5b70c;
+	color: #f5b70c;
+	background: transparent;
 }
 
 .btn:hover {
@@ -337,6 +351,9 @@ header {
 /* ========================= */
 /* Features Section CSS styling */
 .features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 120px 10%;
 	background: linear-gradient(135deg, #111, #1d1d1d);
 	color: white;
@@ -364,6 +381,9 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: 80px;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 30px; */
 }
 
 .features-image {
@@ -459,6 +479,17 @@ header {
 	background: #ffb74d;
 
 	transform: translateY(-3px);
+}
+
+/* Mobile Responsive Styles for Features Section */
+@media (max-width: 900px) {
+	.features-content {
+		flex-direction: column;
+	}
+	.features-image {
+		margin-bottom: 10px;
+		width: 300px;
+	}
 }
 
 /* ========================= */
