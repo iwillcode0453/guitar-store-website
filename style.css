@@ -482,7 +482,7 @@ header {
 }
 
 /* Mobile Responsive Styles for Features Section */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 	.features-content {
 		flex-direction: column;
 	}
@@ -490,6 +490,26 @@ header {
 		margin-bottom: 10px;
 		width: 300px;
 	}
+	.feature-btn {
+		margin: 20px auto 0;
+	}
+} */
+
+@media (max-width: 768px) {
+	.features-content {
+		flex-direction: column;
+	}
+	.features-image {
+		margin-bottom: 10px;
+		width: 300px;
+	}
+    .feature-btn {
+        display: block;
+        margin: 20px auto 0;
+        width: 85%;
+        /* margin: 30px auto; */
+        align-items: center;
+    }
 }
 
 /* ========================= */
