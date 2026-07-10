@@ -12,7 +12,7 @@ html {
 header {
 	position: fixed;
 	top: 0;
-	width: 90vw;
+	width: 100vw;
 	height: 90px;
 
 	display: flex;
@@ -503,13 +503,13 @@ header {
 		margin-bottom: 10px;
 		width: 300px;
 	}
-    .feature-btn {
-        display: block;
-        margin: 20px auto 0;
-        width: 85%;
-        /* margin: 30px auto; */
-        align-items: center;
-    }
+	.feature-btn {
+		display: block;
+		margin: 20px auto 0;
+		width: 85%;
+		/* margin: 30px auto; */
+		align-items: center;
+	}
 }
 
 /* ========================= */
